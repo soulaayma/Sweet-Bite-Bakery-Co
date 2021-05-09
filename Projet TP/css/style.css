@@ -1,0 +1,367 @@
+/**{
+    background-color: #ffbead;
+}
+*/
+
+body{
+  font-family :-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: small;
+}
+
+.container{
+    width: 85%;
+    /* border: 1px solid red;  */
+    margin: 0 auto;
+
+}
+
+.logo{
+    width: 14%;
+    height: 10%;
+    float: left;
+}
+
+/* nav css */
+/* Add a black background color to the top navigation */
+.topnav {
+    width: 86%;
+    background-color:#e79c9f;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:#ffbead;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:#ffbead;
+    color: white;
+  }
+
+/* image gallerie css */
+
+  .gallerie{
+    width: 86%;
+  }
+
+  .slidershow{
+    width: 84%;
+    margin-top: 20px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #6d6875;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #e79c9f;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+
+
+/*food search css*/
+.food-search{
+background-image: url(../images/cover.jpg);
+background-repeat: no-repeat;
+background-size: 85%;
+background-position:center;
+padding: 7% 6%;
+margin-top: 53px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.food-search input[type="search"]{
+  width: 50%;
+  padding: 1%;
+  font-size: 1rem;
+  border: none;
+}
+
+.btn{
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn-primary{
+  background-color:#e79c9f;
+}
+
+.btn-primary:hover{
+  background-color:#ffbead;
+}
+
+h2{
+  color:#e79c9f;
+  font-size: 1.3rem;
+}
+
+
+
+/* css for categories */
+/*.categories{
+   padding: 4% 0; 
+}*/
+
+
+.box-3{
+  /* border: 1px solid black; */
+  width: 28%;
+  float:left;
+  margin: 1%;
+  left: 4%;
+}
+
+.img-res{
+  width: 100%;
+}
+
+.img-curve{
+  border-radius: 10px;
+}
+
+.float-container{
+  position: relative;
+  left: 4%;
+}
+
+.float-text{
+  position: absolute;
+  bottom: 50px;
+  left: 37%;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+.text-white{
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* css for the food menu */
+.menu{
+  background-color:#e79c9f; 
+  padding: 3%;
+  width: 985px;
+  margin-left: 95px;
+}
+.food-menu-box{
+  /* border: 1px solid black; */
+  width: 45%;
+  height: 140px;
+  margin: 1%;
+  padding: 1%;
+  background-color: #ffd6c2;
+  float: left;
+  border-radius: 10px;
+}
+.food-menu-img{
+  width:20%;
+  float: left;
+}
+
+.food-menu-desc{
+  width: 70%;
+  float: left;
+  margin-left: 8%;
+}
+
+.food-price{
+  font-size: 0.8rem;
+  margin: 1% 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.food-desc{
+  font-size: 0.8rem;
+}
+
+.title-menu{
+  margin-bottom: 3%;
+  margin-top: 0px;
+  font-size: 1.5rem;
+}
+
+/* CSS for Social */
+.social ul{
+  list-style-type: none;
+}
+.social ul li{
+  display: inline;
+  padding: 1%;
+}
+
+.cont1{
+  background-image:url(../images/2.jpg);
+  background-size: 100%;
+}
+
+.cont11{
+  /* border: 1px solid black; */
+  margin: 1% ;
+  height: 450px;
+  background-color:rgba(231, 156, 159, 0.5)
+}
+
+.btn2{
+  background-color:  #d9d9d9;
+  pointer-events:none;
+}
+
+.big-title{
+  font-size: 100px;
+  color: #f2f2f2;
+  font-style: oblique;
+  margin: 0% 0%;
+}
+.text-cont{
+  /* border: 1px solid black; */
+  width: 60%;
+  position: relative;
+  margin-left: 5cm;
+}
+
+.paragraph{
+  font-style: oblique;
+  font-size: 1.2rem;
+  text-decoration: double;
+}
+
+.food-search2{
+  background-color: #ffbead;
+  width: 911px;
+  margin-left: 93px;
+  /* background-size: 85%;  */
+  background-position:center;
+  padding: 7% 6%;
+  margin-top: 0px;
+  } 
+
+.img-area{
+  width: 27%;
+  float: right;
+  /* border: 1px solid black; */
+  height: 450px;
+  margin-top: 4px;
+  
+}
+
+.text-area{
+  /* width: 780px; */
+  width: 73%;
+  float: left;
+  /* border: 1px solid black; */
+  /* overflow: hidden; */
+  height: 450px;
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color:#ffbead;
+}
+
+.title2{
+  margin-left: 2cm;
+}
+
+.text-cont1{
+  /* border: 1px solid black; */
+  width: 60%;
+  position: relative;
+  margin-left: 2cm;
+}
+
+.img-area2{
+  width: 27%;
+  float: left;
+  /* border: 1px solid black; */
+  height: 450px;
+  margin-top: 4px;
+  
+}
+
+.text-area2{
+  /* width: 780px; */
+  width: 73%;
+  float: right;
+  /* border: 1px solid black; */
+  /* overflow: hidden; */
+  height: 450px;
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color:#ffbead;
+}
